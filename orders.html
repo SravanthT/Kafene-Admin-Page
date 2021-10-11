@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./Css files/orders.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class='navMenu-Left'>
+                <div class="headMenu-item menudiv"><img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="company_logo" class="logo"><p class="nav-bar-brandName">Kafene</p></div>
+                <a href="./orders.html" class="headMenu-item menu-Active">Orders</a>
+                <a href="./products.html"class="headMenu-item">Products</a>
+                <a href="./Users.html"class="headMenu-item">Users</a>
+            </div>
+            <a href="#" class="headMenu-item" onClick="Logout()">Logout</a>
+
+    </nav>
+    </header>
+    <section>
+        <div class='Homepage_orders'>
+        <h1 class="ordersHeading">Orders</h1>
+        <div id='orderFlexWrapper'>
+            <div class="FilterWrapper"><h3>Filters</h3>
+            <div class="FilterOptions">
+                <p> Count: <Span id="ordersFilterCount">0</Span></p>
+                <label class="orderFilterCheckbox"><input type="checkbox" name="orders-new" value="New" checked> New</label>
+                <label class="orderFilterCheckbox"><input type="checkbox" name="orders-packed" value="Packed" checked> Packed</label>
+                <label onclick=checkEnquiry() class="orderFilterCheckbox"><input type="checkbox" name="orders-transit" value="InTransit" checked> InTransit</label>
+                <label class="orderFilterCheckbox"><input type="checkbox" name="orders-delivered" value="Delivered" checked> Delivered</label>
+            </div>
+            </div>
+            <div style="width: 100%;">
+                <table class="OrderListTable">
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th style="min-width:100px">Amount</th>
+                        <th>Status</th>
+                    </tr>
+               <tbody></tbody>
+                
+                
+
+</table>
+        </div>
+
+        </div>
+    </section>
+
+    <script src="./Js files/orders.js"></script>
+    
+</body>
+</html>

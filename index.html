@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene | Login Page</title>
+    <link rel="stylesheet" href="./index.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+      $('document').ready(function() {
+        let loadDirect = localStorage.getItem('LoggedIn')
+console.log(loadDirect)
+    console.log( "ready!" );
+    loadthis()
+    function loadthis(){
+    if(loadDirect != undefined){
+        console.log(loadDirect)
+        window.open("./orders.html","_self")
+        console.log(loadDirect)
+    }
+}});
+  </script>
+
+</head>
+<body>
+    <header>
+        <nav><div class='navMenu-Left'>
+            <div class="headMenu-item menudiv"><img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="company_logo" class="logo"><p class="nav-bar-brandName">Kafene</p></div>
+        <a href="#" class="headMenu-item">Orders</a>
+        <a href="#"class="headMenu-item">Products</a>
+        <a href="#"class="headMenu-item">Users</a>
+    </div>
+    </nav>
+    </header>
+    <section >
+        <div>
+            <form action="" class="login-page-form">
+            <h1>Sign In</h1>
+            <input class='login-inputfield'type="text" placeholder="Enter your Username" name="username"id = "username">
+            <input type="password" name="User_Password" id="passWord"class='login-inputfield' placeholder="Enter the Password">
+            <input type="button" value="LogIn" class="login-button" onClick=validateCredentials()>
+            
+            </form>
+        </div>
+
+    </section>
+    <script src="./Js files/index.js"></script>
+</body>
+</html>

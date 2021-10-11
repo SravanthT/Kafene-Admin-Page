@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./Css files/users.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class='navMenu-Left'>
+                <div class="headMenu-item menudiv"><img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="company_logo" class="logo"><p class="nav-bar-brandName">Kafene</p></div>
+                <a href="./orders.html" class="headMenu-item">Orders</a>
+                <a href="./products.html"class="headMenu-item">Products</a>
+                <a href="./Users.html"class="headMenu-item menu-Active">Users</a>
+            </div>
+            <a href="#" class="headMenu-item" onClick="Logout()">Logout</a>
+
+    </nav>
+    </header>
+    <section>
+        <div class="UserWrapper">
+            <h1 class="UserHeading">Users</h1>
+            <div class ="user-search">
+                <form class="UserListFilter">
+                    <input type="text" name="userSearch" id="userSearch" placeholder="Search by Name">
+                    <input type="reset" value="Reset" id="userlistReset_button">
+                </form>
+                <div style="width: 100%;">
+                    <table class="UserList">
+                        <tr>
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>FullName</th>
+                            <th style="min-width:100px">DoB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                        <tbody id = "bodyELe">
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Js files/users.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+.UserWrapper{
+    width:100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+}
+.UserHeading{
+    margin: 0;
+}
+.UserListFilter{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+#userSearch{
+    width: 90%;
+    padding: 12px 24px;
+    font-size: 15px;
+    border:0;
+    border-bottom:  2px solid #8c8c8c;
+    margin: 0 36px 0 0;
+    outline: none;
+}
+#userlistReset_button{
+display: inline-block;
+border-radius: 30px;
+padding: 14px 36px;
+font-size: 12px;
+font-weight: 500;
+letter-spacing: 1px;
+background-color: #20b883;
+color: #fff;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.UserList{
+    width: 95%;
+    text-align: left;
+    font-size: 14px;
+    padding: 12px 24px;
+}
+table{
+    text-indent: initial;
+    border-spacing: 2px;
+    border-collapse: collapse;
+}
+table>tr{
+    vertical-align: middle;
+}
+tr{
+    display: table-row;
+    border-color: inherit;
+    
+}
+td{
+    display: table-cell;
+    vertical-align: inherit;
+    justify-items: center;
+    padding-left: 24px;
+}
+.userPrimaryText{
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+    padding-right: 0 1em;
+}
+.userSecondaryText{
+    color: #8c8c8c;
+    margin-right: 0 1em;
+    padding-left: 0 1em;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.userList-Row{
+    width: 90%;
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+}
+table th{
+    display: table-cell;
+    vertical-align: inherit;
+    padding:12px 24px;
+}
